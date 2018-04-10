@@ -30,3 +30,25 @@ echo $d
 
 e=$(ping -c 1 google.com | grep 'bytes from' | cut -d = -f 4)
 echo "The ping was $e"
+
+f=2
+g=$((f+2))
+echo $g
+((g++))
+echo $g
+((g--))
+echo $g
+echo
+((g+=5))
+echo $g
+((g*=3))
+echo $g
+((g/=3))
+echo $g
+((g-=5))
+echo $g
+
+h=$((1/3))
+echo $h
+i=$(echo 1/3 | bc -l)
+echo $i

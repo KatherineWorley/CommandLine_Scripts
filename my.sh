@@ -64,3 +64,8 @@ echo $?
 
 [[ 20 -gt 100 ]]
 echo $?
+
+aa=""
+bb="cat"
+[[ -z $aa && -n $bb ]]
+echo $?

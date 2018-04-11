@@ -52,3 +52,13 @@ h=$((1/3))
 echo $h
 i=$(echo 1/3 | bc -l)
 echo $i
+
+[[ "cat" == "cat" ]]
+echo $?
+
+[[ "cat" == "dog" ]]
+echo $?
+
+[[ 20 > 100 ]]
+echo $?
+

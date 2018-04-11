@@ -75,5 +75,9 @@ dd="world"
 ee=$cc$dd
 echo $ee
 
-echo ${#a}
+echo ${#cc}
+echo ${#dd}
+
+ff=${ee: -2}
+
 

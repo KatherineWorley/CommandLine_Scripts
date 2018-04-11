@@ -69,3 +69,9 @@ aa=""
 bb="cat"
 [[ -z $aa && -n $bb ]]
 echo $?
+
+cc="hello"
+dd="world"
+ee=$cc$dd
+echo $ee
+

@@ -75,3 +75,5 @@ dd="world"
 ee=$cc$dd
 echo $ee
 
+echo ${#a}
+

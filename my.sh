@@ -89,10 +89,16 @@ echo -e $flashred"ERROR: "$none$red"Something went wrong."$none
 flashredd=$(tput setab 0; tput setaf 1; tput blink)
 redd=$(tput setab 0; tput setaf 1)
 nonee=$(tput sgr0)
-
+printf "\n"
 echo -e $flashredd"ERROR: "$nonee$redd"Something went wrong."$nonee
-
+printf "\n"
 date
-
+printf "\n"
 printf "Name:\t%s\nID:\t%04d\n" "Katherine" "13"
+today=$(date +"%d-%m-%Y")
+time=$(date +"%H:%M:%S")
+printf "\n"
+printf -v g "Current User: \t%s\nDate:\t\t%s @ %s\n" $USER $today $time
+echo "$g"
+
 

@@ -109,3 +109,9 @@ bb+=("mango")
 echo ${bb[@]}
 
 echo ${bb[@]: -1}
+
+declare -A myarray
+myarray[color]=blue
+myarray["office building"]="HQ West"
+echo ${myarray["office building"] is ${myarray[color]}
+

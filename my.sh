@@ -104,3 +104,8 @@ echo "$g"
 aa=()
 bb=("apple" "banana" "cherry")
 echo ${bb[2]}
+bb[5]="kiwi"
+bb+=("mango")
+echo ${bb[@]}
+
+echo ${bb[@]: -1}

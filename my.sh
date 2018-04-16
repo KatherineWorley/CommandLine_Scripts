@@ -101,4 +101,6 @@ printf "\n"
 printf -v g "Current User: \t%s\nDate:\t\t%s @ %s\n" $USER $today $time
 echo "$g"
 
-
+aa=()
+bb=("apple" "banana" "cherry")
+echo ${bb[2]}

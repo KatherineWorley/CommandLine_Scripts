@@ -114,3 +114,17 @@ echo "Some Test" > file.txt
 cat file.txt
 echo "Even More Test" >> file.txt
 cat file.txt
+
+i=1
+while read f; do
+	echo "Line $i $f"
+	((i++))
+done < file.txt
+
+cat file.txt
+
+cat << EndOfText
+This is a
+multiline
+text string
+

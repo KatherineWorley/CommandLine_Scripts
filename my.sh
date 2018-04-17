@@ -157,6 +157,9 @@ cat <<- EOF > $logfile
 	It contains a brief summary of some system information. 
 EOF
 
+printf "SYS:\t%s\n" $MACHTYPE >> $logfile
+printf "BASH:\t%s\n" $BASH_VERSION >> $logfile 
+
 
 
 

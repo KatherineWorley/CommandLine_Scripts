@@ -110,4 +110,7 @@ echo ${bb[@]}
 
 echo ${bb[@]: -1}
 
-
+echo "Some Test" > file.txt
+cat file.txt
+echo "Even More Test" >> file.txt
+cat file.txt

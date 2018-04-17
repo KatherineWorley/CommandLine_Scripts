@@ -120,11 +120,21 @@ while read f; do
 	echo "Line $i $f"
 	((i++))
 done < file.txt
-
+printf "\n"
 cat file.txt
-
+printf "\n"
 cat << EndOfText
 This is a
 multiline
 text string
+EndOfText
+printf "\n"
+cat <<- EndOfText
+	This is a
+	multiline 
+	text string
+EndOfText
+printf "\n"
+
+
 

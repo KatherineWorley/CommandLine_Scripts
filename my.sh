@@ -166,17 +166,17 @@ printf "BASH:\t%s\n" $BASH_VERSION >> $logfile
 # This is a basic bash script. 
 
 ifa=5
-if [ $a -gt 4 ]; then
+if [[ $ ]; then
 	echo $ifa is greater than 4!
 else 
 	echo $ifa is not greater than 4!
 fi
 
 ifb="This is a sring!"
-if [ $a -gt 4 ]; then
-        echo $ifa is greater than 4!
-else 
-        echo $ifa is not greater than 4!
+if [[ $ifb =~ [0-9]+ ]]; then
+        echo "This are numbers in the string: $ifb
+else
+        echo "There are no numbers in teh string: $ifb
 fi
 
 

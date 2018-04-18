@@ -166,7 +166,7 @@ printf "BASH:\t%s\n" $BASH_VERSION >> $logfile
 # This is a basic bash script. 
 
 ifa=5
-if [[ $ ]; then
+if [ $ ]; then
 	echo $ifa is greater than 4!
 else 
 	echo $ifa is not greater than 4!

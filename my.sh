@@ -161,6 +161,24 @@ printf "SYS:\t%s\n" $MACHTYPE >> $logfile
 printf "BASH:\t%s\n" $BASH_VERSION >> $logfile 
 
 
+# if statements
+#!/bin/bash
+# This is a basic bash script. 
+
+ifa=5
+if [ $a -gt 4 ]; then
+	echo $ifa is greater than 4!
+else 
+	echo $ifa is not greater than 4!
+fi
+
+ifb="This is a sring!"
+if [ $a -gt 4 ]; then
+        echo $ifa is greater than 4!
+else 
+        echo $ifa is not greater than 4!
+fi
+
 
 
 

@@ -174,9 +174,9 @@ fi
 
 ifb="This is a sring!"
 if [[ $ifb =~ [0-9]+ ]]; then
-        echo "This are numbers in the string: $ifb
+        echo "This are numbers in the string: $ifb"
 else
-        echo "There are no numbers in teh string: $ifb
+        echo "There are no numbers in the string: $ifb"
 fi
 
 

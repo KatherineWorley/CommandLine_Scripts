@@ -179,3 +179,10 @@ else
         echo "There are no numbers in the string: $ifb"
 fi
 
+#!/bin/bash
+# This is a basic bash script. 
+for i in 1 2 3 
+do 
+	echo $i
+done 
+

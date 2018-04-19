@@ -179,12 +179,3 @@ else
         echo "There are no numbers in the string: $ifb"
 fi
 
-
-
-
-
-
-
-
-
-

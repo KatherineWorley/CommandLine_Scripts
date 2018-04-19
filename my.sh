@@ -254,8 +254,26 @@ function greeting {
 echo "And now, a greeting!"
 greeting Katherineø
 
+#!/bin/bash
+# This is a basic bash script
+function greeting2 {
+        echo "Hello, there $1!! What a nice $2."
+}
+echo "And now, a greeting!"
+greeting2 Katherine Morning
+greeting2 Everybody Evening
 
 
+function numberthings {
+	i=1
+	for f in $@; do
+		echo $i: $f
+		((i+=1))
+	done
+}
 
+numberthings $(ls)
+
+numberthings pine birch maple spruce
 
 

@@ -238,6 +238,13 @@ case $xxy in
         *) echo "No Match!";;
 esac
 
+#!/bin/bash
+# This is a basic bash script
+function greet {
+	echo "Hello, there!!"
+}
+echo "And now, a greeting!"
+greet
 
 
 

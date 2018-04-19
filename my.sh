@@ -186,3 +186,17 @@ do
 	echo $i
 done 
 
+#!/bin/bash
+# This is a basic bash script. 
+for i in {1..10} 
+do 
+        echo $i
+done 
+
+#!/bin/bash
+# This is a basic bash script. 
+arr=("apple" "banana" "cherry")
+for i in ${arr[@]}
+do
+        echo $i
+done

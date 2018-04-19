@@ -211,6 +211,32 @@ do
         echo "$i: ${arr[$i]}"
 done
 
+#!/bin/bash
+# This is a basic bash script
+x="cat"
+case $x in
+	cat) echo "Feline";;
+	dog|puppy) echo "Canine";;
+	*) echo "No Match!";;
+esac
+
+#!/bin/bash
+# This is a basic bash script
+xx="bird"
+case $xx in
+        cat) echo "Feline";;
+        dog|puppy) echo "Canine";;
+        *) echo "No Match!";;
+esac
+
+#!/bin/bash
+# This is a basic bash script
+xxy="puppy"
+case $xxy in
+        cat) echo "Feline";;
+        dog|puppy) echo "Canine";;
+        *) echo "No Match!";;
+esac
 
 
 

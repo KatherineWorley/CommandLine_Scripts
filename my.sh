@@ -195,8 +195,21 @@ done
 
 #!/bin/bash
 # This is a basic bash script. 
-arr=("apple" "banana" "cherry")
-for i in ${arr[@]}
+#arr=("apple" "banana" "cherry")
+#for i in ${arr[@]}
+#do
+#        echo $i
+#done
+
+#!/bin/bash
+# This is a basic bash script. 
+declare -A arr
+arr["name"]="Katherine"
+arr["id"]="1234"
+for i in "${!arr[@]}"   
 do
-        echo $i
+        echo "$i: ${arr[$i]}"
 done
+
+
+

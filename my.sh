@@ -246,5 +246,16 @@ function greet {
 echo "And now, a greeting!"
 greet
 
+#!/bin/bash
+# This is a basic bash script
+function greeting {
+        echo "Hello, there $1!!" 
+}
+echo "And now, a greeting!"
+greeting Katherineø
+
+
+
+
 
 

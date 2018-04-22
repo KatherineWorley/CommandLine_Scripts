@@ -300,22 +300,34 @@ done
 
 #echo name: $name, pass: $pass, animal: $animal 
 
-printf "\nSelect a number of the animal you'd like to have\n\n"
-select animal in "cat" "dog" "bird" "fish"
-do 
-	echo "You selected $animal!"
-	break
-done
+#printf "\nSelect a number of the animal you'd like to have\n\n"
+#select animal in "cat" "dog" "bird" "fish"
+#do 
+#	echo "You selected $animal!"
+#	break
+#done
 
 
-select option in "cat" "dog" "quit"
-do  
-	case $option in 
-		cat) echo "Cats like to sleep.";;
-		dog) echo "Dogs like to play catch.";;
-		quit) break;;
-		*) echo "I'm not sure what that is.";;
-	esac
-done
+#select option in "cat" "dog" "quit"
+#do  
+#	case $option in 
+#		cat) echo "Cats like to sleep.";;
+#		dog) echo "Dogs like to play catch.";;
+#		quit) break;;
+#		*) echo "I'm not sure what that is.";;
+#	esac
+#done
+
+if [ $# -lt 3 ]; then 
+	cat <<- EOM
+	This command requires three arguments:
+	username, userid, and favorite number.
+	EOM
+else
+	# the program goes here
+	echo "Username: $1"
+	echo "UserID: $2"
+	echo "Favorite Number: $3"
+fi
 
 

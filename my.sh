@@ -287,15 +287,18 @@ while getopts :u:p:ab option; do
 	esac
 done 
 
-echo "User: $user / Pass: $pass"
+#echo "User: $user / Pass: $pass"
 
 
-echo "What is your name?" 
-read name
+#echo "What is your name?" 
+#read name
 
-echo "What is your password?"
-read -s pass
+#echo "What is your password?"
+#read -s pass
 
-read -p "What's your favorite animal? " animal
+#read -p "What's your favorite animal? " animal
 
-echo name: $name, pass: $pass, animal: $animal 
+#echo name: $name, pass: $pass, animal: $animal 
+
+
+select animal in "cat" "dog" "bird" "fish"

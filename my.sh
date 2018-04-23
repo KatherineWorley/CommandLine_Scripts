@@ -318,6 +318,9 @@ done
 #	esac
 #done
 
+
+#!/bin/bash
+# This is a basic bash script
 if [ $# -lt 3 ]; then 
 	cat <<- EOM
 	This command requires three arguments:
